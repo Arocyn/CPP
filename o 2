@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+        
+    int a,i, toplam;
+    cout <<"sayı giriniz"<<endl;
+    cin >> i;
+    toplam = 0;
+    while (i%2==0) 
+    {
+        for(int j=0; j<=i;j-=2)
+        {
+            toplam += j;
+        }
+    }
+    cout << toplam;
+    
+}
+   
