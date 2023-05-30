@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+        
+        int i;
+        cin >> i;
+        
+        if (i<10) {
+        cout << "küçük" << endl;
+        } 
+        else if (i>10){ 
+            cout << "büyük" << endl;
+        }
+        else{
+            cout << "10";
+        }
+    }
+    
+    
