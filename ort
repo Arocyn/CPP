@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+float ort(int a, int b, int c, int d, int e);
+float ort(int a, int b, int c);
+
+int main(){
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    cout<<"5 Adet Sayı Giriniz"<<endl;
+    cin>>a>>b>>c>>d>>e; 
+    cout<<endl<<"3 Ortalaması= "<<ort(a, b, c, d, e);
+    cout<<endl<<"5 Ortalaması= "<<ort(a, b, c);
+    return 0;
+}
+
+float ort(int a, int b, int c, int d, int e){
+    float toplam = a + b + c + d + e; 
+    return toplam/5;
+}
+float ort(int a, int b, int c){
+    float toplam = a + b + c;
+    return toplam/3;
+}
