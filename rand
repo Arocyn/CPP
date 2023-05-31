@@ -1,0 +1,44 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main(){
+   int sayi; 
+   int sayilar[20];
+   int tekAdet, ciftAdet, ciftToplam=0, tekToplam=0;
+   float tekOrt, ciftOrt;
+   
+   srand(time(0));
+   cout<<"Oluşturulan sayılar"<<endl;
+   for(int i=0; i<20; i++){
+       sayilar[i]= sayi= rand() % 100 + 1;
+       cout<<sayilar[i]<<"  ";
+       if(sayilar[i]%2==0){
+           ciftAdet++;
+           ciftToplam+=sayilar[i];
+       }
+       else {
+           tekAdet++;
+           tekToplam+=sayilar[i];
+       }
+   }
+   tekOrt=(float)tekToplam/tekAdet;
+   ciftOrt=(float)ciftToplam/ciftAdet;
+   cout<<endl<<"Tek Ortalama"<<tekOrt<<"  "<<tekAdet<<"Adet tek sayı var.";
+   cout<<endl<<"Çift Ortalama"<<tekOrt<<"  "<<tekAdet<<"Adet çift sayı var.";
+   
+   cout<<endl<<"Çift Sayılar"<<endl;
+   for(int i=0; i<20; i++){
+       if(sayilar[i]%2==0){
+           cout<< sayilar[i]<< "   ";
+       }
+   }
+   
+   cout<<endl<<"Tek Sayılar"<<endl;
+   for(int i=0; i<20; i++){
+       if(sayilar[i]%2==1){
+           cout<< sayilar[i]<< "   ";
+       }
+   }
+    return 0;
+}
