@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int vize;
+    int final; 
+    float ort; 
+    float ortalama;
+    
+    cout<<"Vize notunuzu giriniz: "<< endl; 
+    cin>>vize; 
+    cout<<"Final notunuzu giriniz: "<<endl; 
+    cin>>final;
+    
+    ort = vize * 40 + final * 60;
+    ortalama = ort / 100;
+    
+    cout<<"Not Ortalamanız: "<< ortalama <<endl;
+    
+    if(ortalama>90 & ortalama<101){
+        cout<<"Notunuz AA düşüyor."<< endl;
+    }
+    
+    else if(ortalama>85 & ortalama<89){
+        cout<<"Notunuz BA düşüyor"<<endl;
+    }
+    
+    else if(ortalama>75 & ortalama<84){
+        cout<<"Notunuz BB düşüyor"<<endl;
+    }
+    
+    else if(ortalama>70 & ortalama<74){
+        cout<<"Notunuz CB düşüyor"<<endl;
+    }
+    
+    else if(ortalama>60 & ortalama<69){
+        cout<<"Notunuz CC düşüyor"<<endl;
+    }
+    
+    else if(ortalama>55 & ortalama<59){
+        cout<<"Notunuz DC düşüyor"<<endl;
+    }
+    
+    else if(ortalama>50 & ortalama<54){
+        cout<<"Notunuz DD düşüyor"<<endl;
+    }
+    
+    else if(ortalama>40 & ortalama<49){
+        cout<<"Notunuz FD düşüyor"<<endl;
+    }
+    
+    else{
+        cout<<"Notunuz FF düşüyor"<<endl;
+    }
+}
