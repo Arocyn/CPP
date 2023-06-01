@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstring>
+using namespace std; 
+const float PI = 3.14;
+
+struct Kure {
+    float r; 
+    float x, y, z; 
+    
+    float hacim(){
+        return(r*r*r*4*PI/3);
+        }
+    
+    float alan(){
+        return(r*r*4*PI);
+        }
+    }
+    k; 
+    
+    int main(){
+        k.r=1.0;
+        k.x=2.0;
+        k.y=3.0;
+        k.z=4.0;
+        cout<<"X="<<k.x<<",Y="<<k.y<<",Z="<<k.z<<",r="<<k.r<<"\n"<<"Alan:"<<k.alan()<<"Hacim:"<<k.hacim();
+        return 0;
+        }
+    
