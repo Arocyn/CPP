@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cstring>
+using namespace std; 
+
+struct movies_t{
+    char title[100];
+    char actor[100];
+    int year;
+};
+
+typedef struct movies_t movies;
+movies mine, yours;
+void printmovie (movies movie);
+
+int main(){
+    strcpy(mine.title, "Karayip Korsanları"); 
+    strcpy(mine.actor, "Johnny Depp");
+    mine.year = 2003; 
+    
+    cout<<"Film Adı: ";
+    cin.getline(yours.title, 100);
+    cout<<"Aktör Adı: ";
+    cin.getline(yours.actor, 100);
+    cout<<"Film Yılı: ";
+    cin>>yours.year;
+    
+    cout<<"Favori Filmim: \n";
+    printmovie(mine);
+    cout<<"Sizin favori filminiz: \n";
+    printmovie(yours);
+    
+    return 0;
+}
+
+void printmovie(movies movie){
+    cout<<movie.title;
+    cout<<movie.actor;
+    cout<<"("<<movie.year<<")\n";
+    
+}
