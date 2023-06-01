@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstring>
+using namespace std; 
+
+class Dikdortgen{
+    int genislik, yukseklik;
+    
+    public:
+    void degerler(int, int);
+    int alan(){
+        return genislik*yukseklik;
+        }
+    };
+
+void Dikdortgen::degerler(int x, int y){
+    genislik = x;
+    yukseklik = y;
+    }
+    
+int main(){
+    Dikdortgen dikdortgenA, dikdortgenB;
+    dikdortgenA.degerler(3, 4);
+    dikdortgenB.degerler(5, 6);
+    
+    cout<<"Dikdörtgen A Alanı: "<<dikdortgenA.alan()<<endl;
+    cout<<"Dikdörtgen B alanı: "<<dikdortgenB.alan()<<endl;
+    return 0;
+    }
+    
