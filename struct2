@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstring>
+using namespace std; 
+
+struct uzaklik_t{
+    int uzaklik1;
+    int uzaklik2;
+    int uzaklik;
+    };
+    
+typedef struct uzaklik_t uzak;
+uzak x, y;
+
+int main(){
+    cout<<"İlk uzaklığı giriniz: ";
+    cin>>x.uzaklik1;
+    
+    cout<<"İkinci uzaklığı giriniz: ";
+    cin>>x .uzaklik2; 
+    
+    x.uzaklik = x.uzaklik1 - x.uzaklik2;
+    
+    if(x.uzaklik>1000){
+        cout<<"Farklı Şehirdesiniz";
+        }
+    else if(500<x.uzaklik){
+        cout<<"Kırsaldasınız";
+        }
+    else {
+        cout<<"Aynı Alandasınız";
+        }
+        
+    return 0;
+    
+    }
+    
