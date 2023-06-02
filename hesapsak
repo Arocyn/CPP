@@ -1,0 +1,66 @@
+#include <iostream>
+#include <cstring>
+#include <string>
+using namespace std; 
+
+class Hesaplama{
+    
+    public: 
+    double sayi1 = 0.0;
+    double sayi2 = 0.0;
+    double sonuc = 0.0;
+    void hesap(double, double);
+    
+    
+    
+};
+    
+void hesap(double, double){
+    
+switch (sum) {
+    case '+':
+        sonuc = sayi1 + sayi2;
+        cout<< sayi1 << "+" << sayi2 << "="; 
+        break;
+    case '-':
+        sonuc = sayi1 - sayi2;
+        cout<< sayi1 << "-" << sayi2 << "=";
+        break;
+    case '*': 
+        sonuc = sayi1 * sayi2;
+        cout<< sayi1 << "*" << sayi2 << "=";
+        break;
+    case '/':
+        sonuc = sayi1 / sayi2;
+        cout<< sayi1 << "/" << sayi2 << "=";
+        break;
+    default:
+        cout<<"HATA AAAAAAAAA OPERATÖR GİRİN DEDEİK \n";
+        break;
+        }
+}
+
+
+int main(){
+    char sum;
+    
+    cout<<"Makinemize hoşgeldiniz blip blob \n"; 
+    cout<<"Lütfen bir sayı giriniz \n";
+    cin>>Hesaplama.sayi1;
+    cout<<"Lüften yapmak istediğiniz işlemi girin blip blop \n";
+    cin>>Hesaplama.sum;
+    cout<<"Lütfen ikinci sayınızı giriniz \n";
+    cin>>Hesaplama.sayi2;
+    
+    
+    if(sonuc>100){
+        cout<<"Sonucunuz 100'den büyük \n";
+        }
+    else if(sonuc>50){
+        cout<<"Sonucunuz 50 ile 100 arasında \n;
+        }
+    else(){
+        cout<<"Sonucunuz 50 nin altında \n";
+        }
+    
+}
