@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+    char harf;
+    cout<<"Harf giriniz blip blop:";
+    cin>>harf;
+    if('0'<=harf && harf <='9') cout<<"Sayi giridiniz. Blop blop."<<"\n";
+    else cout<<"Sayi girmediniz. Blip blip." << "\n";
+    return 0;
+    }    
