@@ -1,0 +1,21 @@
+// Girilen değerin ne olduğunu söyleyen program
+// karışık karakterler sayılar 
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main(){
+    string kume;
+    int sayi;
+    cout<<"Girdi verin blip blop \n";
+    cin>> kume;
+    cout<<"Girdiniz: \n"<<kume;
+    
+    for(int i=0; i<kume.length(); i++){
+        int bul = kume[i];
+        if(bul == sayi){
+            cout<<"Cümlenizdeki sayilar: \n"<<bul;
+            }
+        }
+    }
