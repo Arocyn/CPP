@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std; 
+
+int main()
+{
+    char c;
+    cout<<"Bir harf giriniz: \n";
+    cin>> c; 
+    int i = int(c);
+ 
+    cout <<"ASII sistem çıktısı: \n"<< i <<endl;    
+
+    int a[10], n;        
+    cin>>n;    
+    for(i=0; n>0; i++)    
+        {    
+        a[i]=n%2;    
+        n= n/2;  
+        }     
+    for(i=i-1 ;i>=0 ;i--)    
+        {    
+        cout<<a[i];    
+        }    
+    return 0;
+}
