@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+ 
+using namespace std;
+ 
+int main(){ 
+    int i=0;
+    int a;
+    srand(time(NULL));
+    while(i<=10){
+        a = rand() % 10;
+        cout << a << endl;
+        i++;
+    }
+   return 0;
+}
