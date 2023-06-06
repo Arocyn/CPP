@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <chrono>
+#include <thread>
+ 
+using namespace std;
+ 
+int main(){ 
+    int i=0;
+    int a;
+    int x;
+    int y;
+    int z;
+    srand(time(NULL));
+    cout<<"Kaç tane rasgele sayı istersiniz? \n";
+    cin>>x;
+    z = x - 1;
+    cout<<"Aralık ne olsun 0-...: \n";
+    cin>>y;
+    cout<<"Sonuçlar: \n";
+    while(i<=z){
+        a = rand() % y;
+        cout << a << endl;
+        i++;
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    }
+   return 0;
+}
+
+/*
+kodun güzelliği 
+devre şemasının okunurluğu 
+stabil olup olmaması 
+
+*/
