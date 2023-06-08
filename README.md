@@ -8,3 +8,5 @@
 
 <img width="466" alt="image" src="https://github.com/Arocyn/CPP/assets/49655195/d16ee0e8-d7dc-42cb-869c-056f1a9d78aa">
 
+CV foto kullanamamk merak uyandırır 
+Yaptığımız projelerdeki teknolojileri yazacağız
