@@ -8,5 +8,8 @@
 
 <img width="466" alt="image" src="https://github.com/Arocyn/CPP/assets/49655195/d16ee0e8-d7dc-42cb-869c-056f1a9d78aa">
 
-CV foto kullanamamk merak uyandırır 
+CV foto kullanamamk merak uyandırır
 Yaptığımız projelerdeki teknolojileri yazacağız
+Maaş beklentisi net olacak 
+10 üzerinden puan belirt ve 5 in üzerinde puan verme iyi bilmiyorsan inhilizce orta gibi değil 3/10 gibi 
+
